@@ -1,0 +1,12 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  codeql:
+    build: .
+    volumes:
+      - .:/codeql
+    command: >
+      bash -c "codeql database create codeql-db --language=python --source-root . --overwrite &&
+               codeql database analyze codeql-db --format=sarif-latest --output=results.sarif --config-file=codeql-config.yml"
+

@@ -1,0 +1,24 @@
+{
+    "conversations":[
+        {
+            "message":["Hello"],
+            "response": "Hi there!"
+
+        },
+        {
+            "message":["How are you doing?"],
+            "response":"I'm doing great."
+
+        },
+        {
+            "message":["That is good to hear"],
+            "response": "Thank you."
+
+        },
+        {
+            "message":["You're welcome"],
+            "response":"Thanks"
+
+        }
+    ]
+}

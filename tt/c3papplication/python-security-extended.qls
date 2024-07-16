@@ -1,0 +1,4 @@
+queries:
+  - exclude: py/log-injection
+  - exclude: codeql/python-queries/Security/CWE
+  - exclude: codeql/python-queries/Security/CWE-798

@@ -1,0 +1,5 @@
+include requirements/*.txt
+graft c3papplication
+include wsgi.py
+recursive-include c3papplication *.py *.conf *.properties
+global-exclude *.pyc *.gitignore

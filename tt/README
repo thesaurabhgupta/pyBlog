@@ -1,0 +1,38 @@
+First create python virtual enbvironment using python -m virtualenv c3pvenv. We can see the c3pvenv folder (virtualenv).
+
+Active virtualenv by using c3pvenv\Scripts\activate (Windows) & source c3pvenv/bin/activate (Linux)
+
+Output examples,
+Windows :  (c3pvenv) D:\Work\Deployment\OpenStack\25062021\000000000035913-c3p-python>
+Linux   :  (c3pvenv) [root@openstack-centos-cli c3ppy]
+
+To setup local python workspace in Windows
+Install python libraries by using requirements.txt. command pip install -r requirements.txt
+Once after sucessful installation then run application by using command python wsgi.py
+We should able to see the consloe Output like,
+
+ * Serving Flask app "c3papplication" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+
+To setup server environment refer C3PApplicationSetup_V_03.docx under python setup.
+
+To Build binary file use command "python setup.py sdist bdist_wheel"
+Once after the build the python binary(c3papplication-0.1-py3-none-any.whl) will update in dist folder.
+
+Check the check-wheel-contents with command "check-wheel-contents dist\c3papplication-0.1-py3-none-any.whl"
+Output of check-wheel-contents should be something like this
+dist\c3papplication-0.1-py3-none-any.whl: OK
+
+For installing c3papplication-0.1-py3-none-any.whl in python virtual environment use below command
+
+pip install <file location>\c3papplication-0.1-py3-none-any.whl 
+
+For force reinstall (This will reinstall all dependencies)
+pip install <file location>\c3papplication-0.1-py3-none-any.whl --force-reinstall
+
+To run python code locally, we can use two options
+1. Build the binary and instance the binary package in python virtual environment and run the python wsgi.py then server will lauch on 5000 port
+2. We can run directly python wsgi.py file which will refer local files under package of c3papplication

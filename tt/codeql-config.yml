@@ -1,0 +1,4 @@
+queries:
+  - exclude: py/log-injection
+  - include: <path-to-query-directory>
+  - include: <path-to-specific-query-file>

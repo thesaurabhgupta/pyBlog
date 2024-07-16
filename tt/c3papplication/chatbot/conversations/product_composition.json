@@ -1,0 +1,28 @@
+{
+    "conversations":[
+        {
+            "message":["ping","frameloss","latency","throughput","traceroute","backup","discovery"],
+            "response":"Enter IP address "
+
+        },
+        {
+            "message":["status"],
+            "response":"Enter Request ID ex:SLGB-C679EAA"
+        },
+        {
+            "message":["help"],
+            "response":"For pingtest enter:ping  <newLine>For framelosstest enter:frameloss  <newLine>For tracerouttest enter:traceroute  <newLine>For throughputtest enter:throughput <newLine>For discovery enter:discovery  \nFor latencytest enter:latency  <newLine>For backup request id enter:backup <newLine>To get the status of request id enter:status"           
+
+        },
+        {
+            "message":["IP address is not valid"],
+            "response":"IP address is not valid <newLine>Do you want to continue the test?[Yes/No]"           
+
+        }
+    ]
+}
+
+
+   
+      
+      
